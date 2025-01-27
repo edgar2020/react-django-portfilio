@@ -15,8 +15,8 @@ function Navbar() {
       setIsActive(false)
     }
     return (
-      <div class ="outer-navbar-div">
-        <div class ="nav-header">
+      <div id ="outer-navbar-div">
+        <div id ="nav-header">
         <nav class ={`${ 'navbar'}`}>
             <a href='#home' class ={`${ 'class-logo'}`}><img src={E_logo} alt="Logo" /></a>
             <ul class ={`${ 'navMenu'} ${isActive ? 'active' : ''}`}>
@@ -24,13 +24,13 @@ function Navbar() {
                 <a href='#asdf' class ={`${ 'navLink'}`}>Home</a>
               </li>
               <li onClick={removeActive}>
-                <a href='#hdf' class ={`${ 'navLink'}`}>Catalog</a>
+                <a href='#hdf' class ={`${ 'navLink'}`}>About Me</a>
               </li>
               <li onClick={removeActive}>
-                <a href='#adsb' class ={`${ 'navLink'}`}>All products</a>
+                <a href='#adsb' class ={`${ 'navLink'}`}>Work Experience</a>
               </li>
               <li onClick={removeActive}>
-                <a href='#cc' class ={`${ 'navLink'}`}>Contact</a>
+                <a href='#cc' class ={`${ 'navLink'}`}>Contact Me</a>
               </li>
             </ul>
             <div class ={`${ 'hamburger'} ${isActive ?  'active' : ''}`}  onClick={toggleActiveClass}>
