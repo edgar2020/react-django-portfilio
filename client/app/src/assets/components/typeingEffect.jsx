@@ -16,7 +16,7 @@ const Typewriter = ({ text, delay}) => {
     }
   }, [currentIndex, delay, text]);
 
-  return <div class="typedText">{currentText}</div>;
+  return <div className="typedText">{currentText}</div>;
 };
 
 export default Typewriter;

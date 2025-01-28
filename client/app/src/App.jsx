@@ -4,6 +4,8 @@ import header_1 from './assets/ASCII-art-header.png'
 import header_2 from './assets/ASCII-art-head-header.png'
 import Typewriter from "./assets/components/typeingEffect";
 import Navbar from "./assets/components/navbar";
+import ContactMe from "./assets/components/contanctMeForm";
+import ContactMeEntries from "./assets/components/contactFormEntries";
 
 import './App.css'
 
@@ -13,16 +15,16 @@ function App() {
 
   return (
     <>
-      <html>
+      {/* <html> */}
           <Navbar/>
-        <body>
+        {/* <body> */}
           <div id="app-content">
 
             <div id="terminal">
-              <div class="terminal-child terminal-background">
+              <div className="terminal-child terminal-background">
                 <img id="header-img" src={header_1} alt="background image"/>
               </div>
-              <div class="terminal-child terminal-text">
+              <div className="terminal-child terminal-text">
                 <Typewriter text="  ______    _               __      __        _                   "  delay={textSpeed}/>  
                 <Typewriter text=" |  ____|  | |              \ \    / /       | |                  "  delay={textSpeed}/>  
                 <Typewriter text=" | |__   __| | __ _  __ _ _ _\ \  / /__ _ __ | |_ _   _ _ __ __ _ "  delay={textSpeed}/>  
@@ -39,14 +41,11 @@ function App() {
                 <Typewriter text="|_|  |_|\___|_|\___|_| |_|\__,_|_|  \___/___| "                      delay={textSpeed}/>  
               </div>
             </div>
+            <ContactMeEntries/>
+            <ContactMe/>
           </div>
-        </body>
-        <footer>
-                                                            
-                                                                                 
-
-        </footer>
-      </html>
+        {/* </body> */}
+      {/* </html> */}
     </>
   )
 }
